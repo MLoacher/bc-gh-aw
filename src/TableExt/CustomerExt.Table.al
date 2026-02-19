@@ -10,6 +10,7 @@ tableextension 50100 "Customer Ext" extends Customer
         field(50100; "External Reference"; Code[20])
         {
             Caption = 'External Reference';
+            ToolTip = 'Specifies the external reference code for this customer.';
             DataClassification = CustomerContent;
         }
     }

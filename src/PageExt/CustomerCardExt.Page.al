@@ -1,8 +1,8 @@
 /// <summary>
-/// Page Extension for Customer Card (ID 50100)
+/// Page Extension for Customer Card (ID 50101)
 /// Adds custom fields to the Customer Card page.
 /// </summary>
-pageextension 50100 "Customer Card Ext" extends "Customer Card"
+pageextension 50101 "Customer Card Ext" extends "Customer Card"
 {
     layout
     {
@@ -10,7 +10,7 @@ pageextension 50100 "Customer Card Ext" extends "Customer Card"
         {
             field("External Reference"; Rec."External Reference")
             {
-                ApplicationArea = All;
+                ApplicationArea = Suite;
                 ToolTip = 'Specifies the external reference code for this customer.';
             }
         }
