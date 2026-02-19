@@ -11,5 +11,12 @@ tableextension 50100 "Customer Ext" extends Customer
             Caption = 'External Reference';
             DataClassification = CustomerContent;
         }
+        field(50101; Priority; Option)
+        {
+            Caption = 'Priority';
+            ToolTip = 'Specifies the priority level for this customer. Use this to categorize customers by importance.';
+            DataClassification = CustomerContent;
+            OptionMembers = Low,Medium,High;
+        }
     }
 }
