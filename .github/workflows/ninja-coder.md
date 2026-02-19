@@ -2,21 +2,19 @@
 on:
   issues:
     types: [opened, labeled]
-    label: ninja
 
 permissions:
   contents: read
-  issues: write
-  pull-requests: write
+  issues: read
+  pull-requests: read
 
 safe-outputs:
   create-pull-request:
-    branch-prefix: "ninja/"
     title-prefix: "[Ninja] "
     labels: [ninja, ai-generated]
+    draft: true
   
-  comment-on-issue:
-    allowed: true
+  add-comment:
 
 ---
 
@@ -40,11 +38,12 @@ When writing AL code, follow these rules:
 - Add appropriate comments in English
 - Use meaningful variable and function names
 - Respect existing code patterns in the repository
+- Use the ID range 50100-50199 as defined in app.json
 
 ## Common BC Tasks You Can Handle
 
-- Add new fields to tables
-- Add fields to pages (Cards, Lists)
+- Add new fields to tables (tableextension)
+- Add fields to pages (pageextension)
 - Create simple table extensions
 - Create page extensions
 - Modify page layouts
@@ -55,13 +54,13 @@ When writing AL code, follow these rules:
 
 1. First, comment on the issue acknowledging the request
 2. Analyze what needs to be done
-3. Generate the AL code
+3. Generate the AL code files
 4. Create a PR with the changes
-5. Comment on the issue with a link to the PR
 
 ## Important
 
-- Only modify `.al` files
+- Only modify or create `.al` files in the `src/` directory
 - Do not touch `app.json` unless specifically requested
 - If the request is unclear, comment on the issue asking for clarification
 - If the request is too complex, comment explaining what parts you can handle
+- Follow the existing naming conventions: `*.Table.al`, `*.Page.al`, `*.Codeunit.al`
