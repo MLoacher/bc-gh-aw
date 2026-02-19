@@ -1,39 +1,40 @@
-# BC GitHub Agentic Workflows (Ninja Project) 🥷
+# Ninja BC Project 🥷
 
-AI-powered Business Central development using GitHub Agentic Workflows.
+AI-powered Business Central development using GitHub Copilot Coding Agent.
 
-## What is this?
+## How it works
 
-Create a GitHub Issue → AI generates AL code → PR created automatically.
-
-## How to use
-
-1. Create an issue with the `ninja` label
-2. Describe what you want (e.g., "Add a 'Priority' field to the Customer table")
-3. Wait for the AI to generate code and create a PR
+1. Create a GitHub Issue describing what you want
+2. Assign the issue to Copilot (select "bc-developer" agent)
+3. Copilot generates AL code and creates a PR
 4. Review and merge
+
+## Custom Agent
+
+This repo includes a custom agent profile for BC development:
+- `.github/agents/bc-developer.agent.md`
+
+The agent knows AL syntax, BC patterns, and follows Microsoft coding guidelines.
 
 ## Example Issue
 
-```markdown
+```
 Title: Add Priority field to Customer
 
 Add a new field "Priority" (Option: Low, Medium, High) to the Customer table.
 Display it on the Customer Card after the "Name" field.
 ```
 
-## Setup
-
-1. Install gh-aw extension: `gh extension install github/gh-aw`
-2. Add workflow: `gh aw compile`
-3. Configure AI secret (ANTHROPIC_API_KEY or COPILOT_GITHUB_TOKEN)
-
 ## Project Structure
 
 ```
 src/
 ├── TableExt/       # Table Extensions
-├── PageExt/        # Page Extensions  
+├── PageExt/        # Page Extensions
 ├── Codeunit/       # Codeunits
 └── Page/           # Pages
 ```
+
+## ID Range
+
+Object IDs: 50100 - 50199

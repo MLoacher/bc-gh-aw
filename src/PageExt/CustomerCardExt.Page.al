@@ -1,6 +1,6 @@
 /// <summary>
-/// Page Extension for Customer Card (ID 50100)
-/// Adds custom fields to the Customer Card page.
+/// Extends the Customer Card with custom fields.
+/// Object ID: 50100
 /// </summary>
 pageextension 50100 "Customer Card Ext" extends "Customer Card"
 {
