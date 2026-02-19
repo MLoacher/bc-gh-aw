@@ -1,8 +1,8 @@
 /// <summary>
 /// Extends the Customer Card with custom fields.
-/// Object ID: 50100
+/// Object ID: 50101
 /// </summary>
-pageextension 50100 "Customer Card Ext" extends "Customer Card"
+pageextension 50101 "Customer Card Ext" extends "Customer Card"
 {
     layout
     {
@@ -12,6 +12,11 @@ pageextension 50100 "Customer Card Ext" extends "Customer Card"
             {
                 ApplicationArea = All;
                 ToolTip = 'Specifies the external reference code for this customer.';
+            }
+            field(Priority; Rec.Priority)
+            {
+                ApplicationArea = Suite;
+                ToolTip = 'Specifies the priority level for this customer.';
             }
         }
     }
