@@ -17,7 +17,7 @@ pageextension 50100 "Customer Card Ext" extends "Customer Card"
             {
                 ApplicationArea = All;
                 Caption = 'Rating (0-5 stars)';
-                ToolTip = 'Specifies the customer rating from 1 to 5 stars. 0 indicates no rating.';
+                ToolTip = 'Specifies the customer rating from 0 to 5 stars. 0 indicates no rating.';
             }
         }
     }
