@@ -1,0 +1,30 @@
+{
+  "id": "f1e2d3c4-b5a6-7890-1234-567890abcdef",
+  "name": "Ninja BC Extension",
+  "publisher": "Ninja Project",
+  "version": "1.0.0.0",
+  "brief": "AI-generated Business Central customizations",
+  "description": "This extension contains AI-generated customizations for Business Central.",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "26.0.0.0",
+  "application": "26.0.0.0",
+  "idRanges": [
+    {
+      "from": 50100,
+      "to": 50199
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "14.0",
+  "target": "Cloud"
+}
