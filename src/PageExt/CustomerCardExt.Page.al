@@ -13,6 +13,11 @@ pageextension 50100 "Customer Card Ext" extends "Customer Card"
                 ApplicationArea = All;
                 ToolTip = 'Specifies the external reference code for this customer.';
             }
+            field(Rating; Rec.Rating)
+            {
+                ApplicationArea = All;
+                ToolTip = 'Specifies the customer rating from 0 to 5 stars. 0 indicates no rating.';
+            }
         }
     }
 }

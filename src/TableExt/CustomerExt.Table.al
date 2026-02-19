@@ -11,5 +11,13 @@ tableextension 50100 "Customer Ext" extends Customer
             Caption = 'External Reference';
             DataClassification = CustomerContent;
         }
+        field(50102; Rating; Integer)
+        {
+            Caption = 'Rating';
+            DataClassification = CustomerContent;
+            MinValue = 0;
+            MaxValue = 5;
+            ToolTip = 'Specifies the customer rating from 0 to 5 stars. 0 indicates no rating.';
+        }
     }
 }
