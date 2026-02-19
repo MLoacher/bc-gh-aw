@@ -15,9 +15,9 @@ tableextension 50100 "Customer Ext" extends Customer
         {
             Caption = 'Rating';
             DataClassification = CustomerContent;
-            MinValue = 1;
+            MinValue = 0;
             MaxValue = 5;
-            ToolTip = 'Specifies the customer rating from 1 to 5 stars.';
+            ToolTip = 'Specifies the customer rating from 1 to 5 stars. 0 indicates no rating.';
         }
     }
 }
